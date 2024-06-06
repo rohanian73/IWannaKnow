@@ -1,0 +1,356 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Login Form */
+
+.login-form {
+  width: 330px;
+  height: 470px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 5px;
+  background-color: #6c83b3; /* 9eb5e7 */
+  color: #fff;
+}
+
+.login-container {
+  max-width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-title__main {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.login-email {
+  position: absolute;
+  top: 18%;
+}
+
+.login-password {
+  position: absolute;
+  top: 31%;
+}
+
+.login-input {
+  border: 2px solid #fff; /* b8b8b8 */
+  outline: none;
+  border-radius: 20px;
+
+  color: #fff;
+  background-color: #6c83b3;
+
+  width: 220px;
+  height: 40px;
+  padding: 0 10px 0 20px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+
+  transition: border-width 0.6s linear;
+}
+
+.login-label {
+  font-size: 14px;
+  color: #fff; /* 606060 */
+  background-color: #6c83b3;
+
+  position: absolute;
+  left: 8%;
+  top: 30%;
+
+  transition: 0.2s;
+}
+
+.login-input:focus + .login-label,
+.login-input:valid + .login-label {
+  top: -15%;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.login-input:focus {
+  /* border: 1px solid #21ebff; */
+}
+
+.login-password-toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin-left: 8px;
+
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+}
+
+.login-password-toggle div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  border-bottom: 3px solid #5e5e5e;
+
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+.login__remember-me {
+  position: absolute;
+  top: 45%;
+  left: 12%;
+
+  display: flex;
+}
+
+.login-cbox {
+  border: none;
+  outline: none;
+  margin-top: 0;
+
+  cursor: pointer;
+}
+
+.login-span {
+  font-size: 13px;
+  margin-left: 5px;
+
+  cursor: default;
+}
+
+.login__password-recovery {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 13px;
+}
+
+.login__password-recovery::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+
+  background-color: #fff;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+
+  transition: 0.1s linear;
+}
+
+.login__password-recovery:hover:after {
+  opacity: 1;
+}
+
+.login-btn {
+  position: absolute;
+  top: 55%;
+
+  padding: 8px 25px;
+
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+  background-color: #fff;
+  color: #222;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s linear;
+}
+
+.login-btn:hover {
+  background-color: #ff8181;
+  color: #fff;
+}
+
+.login-title__social {
+  position: absolute;
+  top: 65%;
+
+  color: #fff;
+}
+
+.login-socials {
+  position: absolute;
+  top: 80%;
+}
+
+.login-social__google {
+  margin: 0 15px;
+
+  color: #5e5e5e;
+  background-color: #fff;
+
+  padding: 8px 10px;
+  border-radius: 10px;
+
+  transition: 0.1s linear;
+}
+
+.login-social__google:hover {
+  color: #fff;
+  background-color: #ff8181; /* #5e5e5e */
+}
+
+.create-account {
+  position: absolute;
+  top: 90%;
+
+  font-size: 13px;
+}
+
+.create-account-link {
+  margin-left: 3px;
+
+  text-decoration: none;
+  color: #fff;
+
+  transition: 0.5s linear;
+}
+
+.create-account-link::after {
+  content: "";
+  display: block;
+  width: 37%;
+  height: 1px;
+
+  background-color: #fff;
+
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+
+  transition: 0.1s linear;
+}
+
+.create-account-link:hover::after {
+  opacity: 1;
+}
+
+.welcome-message {
+  display: none;
+}
+
+.logout-btn {
+  display: none;
+
+  padding: 8px 25px;
+
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+  background-color: #222;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.logout-btn:hover {
+  background-color: #ff8181;
+  color: #fff;
+}
+
+/* Forgot Password Form */
+
+.forgot-password-form {
+  width: 330px;
+  height: 270px;
+}
+
+.forgot-password-email {
+  top: 35%;
+}
+
+.forgot-password-btn {
+  top: 60%;
+  width: 60%;
+}
+
+.reset-url {
+  display: none;
+}
+
+/* Reset Password Form */
+
+.reset-password-form {
+  display: none;
+
+  width: 330px;
+  height: 400px;
+}
+
+.reset-password-new-password {
+  position: absolute;
+  top: 25%;
+}
+
+.reset-password-confirm-password {
+  position: absolute;
+  top: 40%;
+}
+
+.login-password-toggle_np {
+  top: 30%;
+  right: 3%;
+}
+
+.reset-password-btn {
+  top: 250%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.reset-password-btn a {
+  text-decoration: none;
+  color: #222;
+}
