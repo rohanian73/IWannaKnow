@@ -1,5 +1,5 @@
 # IWannaKnow
-An online learning platform that is designed for people worldwide to get free and accessible education from qualified teachers. It is a web application that was developed within the Group Project module Year 2 at Brunel. My responsibilities covered logging into a user account.
+An online learning platform that is designed for people worldwide to get free and accessible education from qualified teachers. It is a web application that was developed within the Group Project Year 2 module at Brunel. My responsibilities covered logging into a user account.
 <br></br>
 • Designed a class diagram in Visual Paradigm involving the user attributes and methods. <br>
 • Developed manual login, social login (Google), password recovery, and token service. <br>
